@@ -3,6 +3,7 @@
   <head>
     <title>MessageMe</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= favicon_link_tag %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +12,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/navigation' %>
+    <div class="ui container">
+      <%= yield %>
+    </div>
   </body>
 </html>
